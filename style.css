@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  header,footer,main,nav,aside {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  header {
+    background-color: #F7B3F9;
+  }
+  footer {
+    background-color: #C9F4FF;
+  }
+  main {
+    background-color: #BAFCDE;
+  }
+  nav {
+    background-color: #FDFFCC;
+  }
+  aside {
+    background-color: #FFDE99;
+  }
+  
+  .grid_container {
+    display: grid;/* グリッドコンテナであることを定義 */
+    grid-template-areas: 'header'/* 1行目 */
+                  'nav'/* 2行目 */
+                  'main'/* 3行目 */
+                  'aside'/* 4行目 */
+                  'footer'/* 5行目 */;
+    grid-template-rows: 60px 50px 1fr auto 60px;/* 行の高さ */
+    grid-template-columns: 1fr;/* 列の幅 */
+    grid-row-gap: 0; /*行と行の間の余白 */
+  }
+  .grid_header {
+    grid-area: header;
+  }
+  .grid_footer {
+    grid-area: footer;
+  }
+  .grid_main {
+    grid-area: main;
+  }
+  .grid_nav {
+    grid-area: nav;
+  }
+  .grid_aside {
+    grid-area: aside;
+  }
+  
+  /* デバイス幅が600px以上の時 */
+  @media screen and (min-width: 600px) {
+    .grid_container {
+      grid-template-areas: 'header header header'/* 1行目 */
+                    'nav main aside'/* 2行目 */
+                    'footer footer footer';/* 3行目 */
+      grid-template-rows: 60px 1fr 100px;/* 行の高さ */
+      grid-template-columns: 20% 1fr 20%;/* 列の幅 */
+      grid-row-gap: 10px;/* 行と行の間の余白 */
+      grid-column-gap: 10px;/* 列と列の間の余白 */
+      /* ショートハンドだと
+      grid-gap: 10px 10px ;
+      */
+      height: 100vh;/* フッタの位置を最下部に */
+    }
+    
+  }
