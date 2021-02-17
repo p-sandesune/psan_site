@@ -8,10 +8,15 @@ padding:0;
     text-align: center;
     font-family: 'Potta One', cursive;
 }
-.main{
+.mainconte{
+   font-family: 'Potta One', cursive;
     text-align: center;
-    font-family: 'Potta One', cursive;
-}   
+}
+.brog{
+    text-align: center;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    background-color: blanchedalmond;
+}
 .link_button {
     font-weight: bold;
     text-decoration: none;
@@ -31,5 +36,4 @@ padding:0;
   .link_button:visited {
     color: burlywood;
   }    
-    
     
