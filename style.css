@@ -31,5 +31,13 @@ padding:0;
   .link_button:visited {
     color: burlywood;
   }    
-    
-    
+  .youtube{
+    font-family: 'Avenir','Arial';
+    text-align: center;
+  
+  
+  
+  }
+  .button{
+    text-align: center;
+  }
