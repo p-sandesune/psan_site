@@ -1,41 +1,33 @@
 *{
     margin:0;
-padding:0;
-}
-.sab{
-    color: white;
-    background-color: black;
-    text-align: center;
-    font-family: 'Potta One', cursive;
-}
-.mainconte{
-   font-family: 'Potta One', cursive;
-    text-align: center;
-}
-.brog{
-    text-align: center;
-    font-family: 'Sawarabi Mincho', sans-serif;
-    background-color: blanchedalmond;
-}
-.link_button {
-    font-weight: bold;
-    text-decoration: none;
-    background: black;
-    color:white;
-    padding:5px 10px;
-    border-radius: 20px;
-    font-family: 'Avenir','Arial';
-  }
+    padding:0;
+    }
+
+
+    header {
+      display: flex;
+      width: 100%;
+      height: 100px;
+      background-color: pink;
+      align-items: center;
+      position:fixed
+    }
+     
+    .title {
+       
+        margin-right: auto;
+      padding: 40px 40px;
+     text-decoration: none; 
+    }
+     
+    .menu-item {
+      list-style: none;
+      display: inline-block;
+      padding: 10px;
+    }
+    a{
+       color: black;
+        text-decoration: none; 
+        font-family: 'Roboto', sans-serif;
+    }
   
-  .link_button:hover {
-    background: black;
-    text-decoration: none;
-  }
-  
- 
-  .link_button:visited {
-    color: burlywood;
-  }    
-  .iii{
-    text-align: center;
-  }
